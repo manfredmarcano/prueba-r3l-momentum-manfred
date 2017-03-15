@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <!--<link rel="stylesheet" href="vendors/css/bootstrap/3.3.7/bootstrap.min.css">
+        <link rel="stylesheet" href="vendors/css/bootstrap/3.3.7/bootstrap-theme.min.css">-->
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="logo-wrapper">
+                <a href=""><img src="assets/images/r-3-l-logo.png" alt=""></a>
+            </div>
+            <div class="config">
+                <p>
+                    <span>Admin Name</span><img src="assets/images/shape.png" alt="Config">
+                </p>
+            </div>
+        </header>
+        <section class="nav-content">
+            <nav>
+                <ul>
+                    <li><input type="text" placeholder="NAVIGATE"></li>
+                    <li><a ui-sref="analytics" ui-sref-active="active"><div class="menu-icon"><img src="assets/images/analitycs.png"></div>Analytics</a></li>
+                    <li><a ui-sref="news" ui-sref-active="active"><div class="menu-icon"><img src="assets/images/newspaper-o.png"></div>News</a></li>
+                    <li><a href=""><div class="menu-icon"><img src="assets/images/board-brief.png"></div>Board Brief</a></li>
+                    <li><a href=""><div class="menu-icon"><img src="assets/images/briefcase.png"></div>Briefcase</a></li>
+                    <li><a href=""><div class="menu-icon"><img src="assets/images/angle-double-left.png"></div>Close menu</a></li>
+                </ul>
+            </nav>
+            <section class="main">
+                <div class="principal">
+                    <div ui-view></div>
+                </div>
+            </section>
+        </section>
+
+
+
+        <!--<div ui-view></div>-->
+
+        <!--<div class="container">
+            <div ui-view="header"></div>
+            <div ui-view="content"></div>
+            <div ui-view="footer"></div>
+            <div uib-alert ng-repeat="item in api" class="alert-success" close="closeAlert($index)">{{ item.title }}</div>
+        </div>-->
+
+        <!-- <pre>{{ api | json }}</pre> -->
+
+
+
+    </body>
+    <!-- Vendors -->
+    <script src="vendors/js/jquery/1.9.1/jquery.js"></script>
+    <script src="vendors/js/angularjs/1.6.1/angular.min.js"></script>
+    <script src="vendors/js/angular-animate/1.6.1/angular-animate.js"></script>
+    <!--<script src="vendors/js/ui-bootstrap/2.5.0/ui-bootstrap-tpls-2.5.0.min.js"></script>-->
+    <script src="vendors/js/ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+    <script src="vendors/js/chart/Chart.min.js"></script>
+    <script src="vendors/js/angular-chart/angular-chart.min.js"></script>
+
+
+    <!-- AngularJS APP -->
+    <script src="app/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/controllers/ctrlAnalytics.js"></script>
+    <script src="app/controllers/ctrlNews.js"></script>
+
+    <!-- Directives -->
+
+    <!-- Services -->
+    <script src="app/services/servAPI.js"></script>
+
+    <!-- Filters -->
+</html>

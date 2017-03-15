@@ -1,0 +1,154 @@
+*
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+html
+    height: 100%
+    margin: 0
+    padding: 0
+    body
+        height: 100%
+        margin: 0
+        padding: 0
+        //background-color: red
+        background-color: $content-bg-color
+        font-family: "ProximaNova"
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+
+        input[type="text"],
+        input[type="password"],
+        textarea,
+        select
+            outline: none
+
+        header
+            height: 60px
+            background-color: #2f323a
+            width: 100%
+            .logo-wrapper
+                width: 264px
+                height: 100%
+                background-color: #1E2025
+                position: relative
+                float: left
+                img
+                    width: calc(100% - 90px)
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    -webkit-transform: translate(-50%, -50%)
+                    -moz-transform: translate(-50%, -50%)
+                    -ms-transform: translate(-50%, -50%)
+                    -o-transform: translate(-50%, -50%)
+                    transform: translate(-50%, -50%)
+            .config
+                color: #FFFFFF
+                float: left
+                width: calc(100% - 264px)
+                height: 100%
+                position: relative
+                p
+                    position: absolute
+                    right: 40px
+                    top: 50%
+                    transform: translateY(-50%)
+                    margin: 0
+                    span
+                        margin-right: 10px
+                    img
+                        vertical-align: middle
+                        margin-bottom: 1px
+                        cursor: pointer
+        section.nav-content
+            height: calc(100% - 60px)
+            nav
+                background-color: $primary-color
+                height: 100%
+                width: 264px
+                float: left
+                ul
+                    list-style: none
+                    padding-left: 0
+                    margin-top: 0
+                    li
+                        //background-color: #2b542c
+                        &:hover
+                            background-color: $primary-color-hover
+                        &:first-child
+                            padding: 8px 25px
+                            padding-top: 15px
+                            input
+                                width: 100%
+                                border: 0
+                                padding: 8px 0px
+                                border-bottom: solid 2px $inputs-color
+                                background-color: transparent
+                                color: #FFF
+                                font-size: 16px
+
+                                &::-webkit-input-placeholder // Chrome/Opera/Safari
+                                    font-size: 16px
+                                    text-transform: uppercase
+                                    color: $inputs-color
+                                &::-moz-placeholder // Firefox 19+
+                                    font-size: 16px
+                                    text-transform: uppercase
+                                    color: $inputs-color
+                                &:-ms-input-placeholder  // IE 10+
+                                    font-size: 16px
+                                    text-transform: uppercase
+                                    color: $inputs-color
+                                &:-moz-placeholder // Firefox 18-
+                                    font-size: 16px
+                                    text-transform: uppercase
+                                    color: $inputs-color
+
+                            &:hover
+                                background-color: transparent
+                        &:last-child
+                            margin-top: 135px
+                        a
+                            text-decoration: none
+                            color: #FFF
+                            display: block
+                            padding: 17px 25px
+                            .menu-icon
+                                display: inline-block
+                                width: 30px
+                        a.active
+                            background-color: $primary-color-hover
+            section.main
+                width: calc(100% - 264px)
+                height: 100%
+                float: left
+                padding-top: 40px
+                padding-left: 40px
+                padding-right: 40px
+                overflow-y: scroll
+                .principal
+                    width: 100%
+                    height: 800px
+                    background-color: #c9c8c8
+                    margin-bottom: 40px
+
+                    .chart-wrapper
+                        background-color: red
+                        width: 100%
+                        height: 350px
+                        padding: 15px
+                        .title
+                            background-color: #1b6d85
+                            height: 30px
+                            width: 100%
+                            font-size: 20px
+                        .content
+                            background-color: #2b542c
+                            height: calc(100% - 30px)
+                    .chart-wrapper.grafica1
+                        color: $titles-color
+
+                    .col-doble
+                        background-color: #1b6d85
+                        width: 100%
+
