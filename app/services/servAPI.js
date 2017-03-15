@@ -6,7 +6,7 @@ app.factory("servAPI", ["$http", "$q", "apiUrl", function($http, $q, apiUrl){
             var promise = defered.promise;
 
             $http
-            	.get(apiUrl+"/posts", datos)
+            	.get("backend/activity-data.json", datos)
                 .then(function(data) {
         			defered.resolve(data);
         		})

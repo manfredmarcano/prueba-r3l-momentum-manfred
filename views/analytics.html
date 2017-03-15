@@ -6,18 +6,45 @@
         </div>
         <div class="content">
             <canvas id="line" class="chart chart-line" chart-data="data"
-                    chart-labels="labels" chart-series="series" chart-options="options"
+                    chart-labels="labels" chart-series="lineasSeries" chart-options="options"
                     chart-dataset-override="datasetOverride" chart-click="onClick">
             </canvas>
+            <!--
+            <pre>
+                {{ data | json}}
+            </pre>
+            -->
         </div>
     </div>
 
     <div class="col-doble">
         <div class="columna">
-            A
+
+            <div class="chart-wrapper grafica2">
+                <div class="title">
+                    Count by zones
+                </div>
+                <div class="content">
+                    <canvas id="bar" class="chart chart-bar" chart-colors="barraColores"
+                            chart-data="barraData" chart-labels="barraLabels" chart-series="barraSeries" chart-options="barraOptions"
+                    </canvas>
+                </div>
+            </div>
+
         </div>
         <div class="columna">
-            B
+
+            <div class="chart-wrapper grafica3">
+                <div class="title">
+                    Speed Average
+                </div>
+                <div class="content">
+                    <canvas id="doughnut" class="chart chart-doughnut" chart-colors="tortaColores"
+                            chart-data="tortaData" chart-labels="tortaLabels" chart-options="optionsTorta">
+                    </canvas>
+                </div>
+            </div>
+
         </div>
     </div>
 
