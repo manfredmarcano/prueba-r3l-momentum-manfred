@@ -1,6 +1,45 @@
 <div>
 
-    <h1>{{ mensaje }}</h1>
+    <div class="mansory-articles">
+		<div class="item" ng-repeat="new in news track by $index">
+			<div class="cat-date">
+				<div class="cat">{{ new.category }}</div>
+				<div class="date">{{ new.date }}</div>
+			</div>
+			<p class="title">{{ new.title }}</p>
+			<img ng-src="{{ new.image }}" ng-if="new.image!=''">
+			<p class="body">
+				{{ new.body }}
+			</p>
+			<div class="footer">
+				<div class="bag"><i class="fa fa-suitcase" aria-hidden="true"></i></div>
+				<div class="like"><i class="fa fa-thumbs-up" aria-hidden="true"></i><div class="number">132</div></div>
+				<div class="reply"><i class="fa fa-share" aria-hidden="true"></i></div>
+			</div>
+		</div>
+		
+		<!--
+		<div class="item">
+			<div class="cat-date">
+				<div class="cat">Business wire</div>
+				<div class="date">Feb 18, 2016</div>
+			</div>
+			<p class="title">New study shows one critital industry lagging behind in software security</p>
+			<p class="body">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cupiditate nemo ut eius! Cupiditate, tempora, quasi? Ducimus iusto placeat nemo, mollitia repellat! Eligendi veritatis, incidunt. Nisi voluptatum at incidunt quas?
+			</p>
+			<div class="footer">
+				<div class="bag"><i class="fa fa-suitcase" aria-hidden="true"></i></div>
+				<div class="like"><i class="fa fa-thumbs-up" aria-hidden="true"></i><div class="number">132</div></div>
+				<div class="reply"><i class="fa fa-share" aria-hidden="true"></i></div>
+			</div>
+		</div>
+		<div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+		<div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit lorm lorem lorem.</div>
+		<div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. sit amet, consectetur adipisicing</div>
+		<div class="item">Lorem ipsum dolor sit sit amet, consectetur adipisicingamet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+		-->
+	</div>	
 
 
 </div>
